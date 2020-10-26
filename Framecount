@@ -1,0 +1,10 @@
+import cv2
+#Cap variable which connects to the video
+cap= cv2.VideoCapture('D:\\LAM\\B.asf')
+
+#CAP_PROP_FPS is predefined in Opencv which is for Framecount, In python we can use cv2.CAP_PROP_FPS
+
+framespersecond= int(cap.get(cv2.CAP_PROP_FPS))
+
+#prints the total number of frame in each second
+print("The total number of frames in this video is ", framespersecond)
